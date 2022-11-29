@@ -1,0 +1,35 @@
+<form method = "post" id = "testsForm" name="testsForm" >
+    {%csrf_token%}
+    <div>
+        <label>write path for file test:  </label>
+        <input type = "text" name="test"> 
+        <button type = "submit" name="file" value="SUMBIT">FILE</button>
+    </div>
+    <br>
+    {%if result%}
+        {%for r in result%}
+            {{r}}<br>
+        {%endfor%}
+    {%endif%}   
+    <br>
+</form>
+
+<form  method = "post"  id = "questionsForm" name="questionsForm">
+    {%csrf_token%}
+    {%if questions%}
+        {%for q in questions%}
+            {{q}} <input type = "number" name= "answer{{forloop.counter0}}">  <br><br>
+        {%endfor%}
+        <br>
+        <button type = "submit" name="questions" value="SUMBIT">ANSWER</button>
+    {%endif%}
+</form>
+<br>
+{%for f in final_result%}
+    {{f}}<br>
+{%endfor%}
+
+
+
+
+

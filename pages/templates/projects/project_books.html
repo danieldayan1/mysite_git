@@ -1,0 +1,10 @@
+<form  method = "post" id = "booksForm" name="booksForm" >
+    {%csrf_token%}
+    <div>
+        <label>write path for file: </label>
+        <input type = "text" name="file">
+        <input type = "submit" value="SUMBIT">
+    </div>
+    <br>
+    {{result}}
+</form>

@@ -1,0 +1,121 @@
+{%extends 'partials/base.html'%}
+{%load static%}
+{%block content%}
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" 
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+<body>
+  <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            About
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            I have a special passion for programming and build various projects in my free time. 
+            I have confidence, motivation, natural curiosity and independent learning skills that will help me excel at any task and make me a valuable addition to any development team.
+            I am a team player and am always striving to get better and be the best.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Experience
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p> 
+              YAEL TECHNOLOGIES  | SQL + Magic Programmer<br>
+              <strong>2022 – Present</strong>
+              <ul>
+                <li>
+                  Responsible for the development of "Rishuy asakim" (platform to open businesses in TEL-AVIV city) .
+                </li>
+                <li>
+                  Responsible for developing UI screens using MAGIC as well as SQL technology.
+                </li>
+              </ul>
+            </p>
+            <p> 
+            MALAM - SYSTEMS | SQL + Magic Programmer<br>
+            <strong>2016 – 2022</strong>
+            <ul>
+              <li>
+                Responsible for the development of many projects using a variety of different technologies, deployment methods and development methodologies.
+              </li>
+              <li>
+                Management of customers DB details using complex SQL queries, aggregations, triggers, functions and etc.
+              </li>
+              <li>
+                Responsible for developing UI forms, buttons and etc. in the customers servers using MAGIC technology.
+              </li>
+            </ul>
+          </p>
+          <p>
+            IDF | Data Analyzer<br>
+          <strong>2011 - 2012</strong>
+          <ul>
+            <li>
+              Responsible for update soldier's personal details   in the military systems. 
+            </li>
+            <li>
+              Working with verity of tools –office in particular.
+            </li>
+          </ul>
+        </p>
+
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Education
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+          <p>
+          Jon Brice COLEGE<br>
+          <strong>2021 – Present</strong> | studding full-stack python, covering mostly the next topics: web development (HTML, CSS, JS, angular and react). OOP & functional programming - particular in python.
+          Accessing data using relative DB such as MySQL and PostgreSQL. Microservices architecture, testing and etc.
+          </p>
+          <p>
+          OPEN UNIVERSITY<br>
+          <strong>2017-2021 </strong>| Study in a variety of undergraduate courses in computer-science BA at the Open University, such as: JAVA, C, VBA, SYSTEMS ARCHITECT AND ETC.
+          </p>
+          <p>
+          MAGIC ACADEMY<br>
+          <strong>2016 </strong>| Programming course in Magic technology.
+          </p>
+          <p>
+          TAFNIT ACADEMY<br>
+          <strong>2010 </strong>  |   Study of web design in Flash + 3D DESIGN USING 3D-MAXC software.
+          </p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFour">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            Skills
+          </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+          <strong>JAVA , PYTHON , Oracle\PL-SQL , Magic , Html5 , CSS , JS , VBA  , Office , Flash</strong> 
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+{%endblock%}
+

@@ -1,0 +1,10 @@
+<form  method = "post" id = "diamondsForm" name="diamondsForm" >
+    {%csrf_token%}
+    <div>
+        <label>type your file: </label>
+        <input type = "text" name="file">
+        <input type = "submit" value="SUMBIT">
+    </div>
+    <br>
+    {{result}}
+</form>
