@@ -1,0 +1,18 @@
+<form  method = "post" id = "calculatorForm" name="calcualorForm" >
+    {%csrf_token%}
+    <div>
+        <label>Write your excercise : </label>
+        <input type = "number" name="num1">   
+        <select name="operator"> 
+            <option>+</option>
+            <option>-</option>
+            <option>*</option>
+            <option>\</option>
+            <option>^</option>
+        </select>
+        <input type = "number" name="num2">
+        <input type = "submit" value="SUMBIT">
+    </div>
+    <br>
+    {{result}}
+</form>

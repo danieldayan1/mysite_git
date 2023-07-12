@@ -1,0 +1,23 @@
+{%extends 'partials/base.html'%}
+{%load static%}
+{%block content%}
+<head>
+	<style type="text/css">
+		body{
+			background-color: yellow
+		}
+	</style>
+	<script src = "{%static 'js/js_contact.js'%}" defer></script>
+</head>
+<body onload = "getPosition();">
+		<h2><mark>For More Details:</mark><br>
+		<ul>
+		<li>טלפון : 054-7000443</li>
+		<li>dandayan9@gmail :יצירת קשר במייל</li>
+		<li><a href = "www.linkedin.com/in/daniel-dayan-457213bb">www.linkedin.com/in/daniel-dayan-457213bb</a> : linkedin חשבון</li>
+		<li><a href ="https://github.com/danieldayan1">https://github.com/danieldayan1 </a>: GIT חשבון</li>
+		</ul>
+		<br>
+		<p id = "location"></p>
+</body>
+{%endblock%}

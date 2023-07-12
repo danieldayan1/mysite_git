@@ -1,0 +1,11 @@
+<form  method = "post" id = "nestedFuncForm" name="nestedFuncForm" >
+    {%csrf_token%}
+    <div>
+        <label> your message and style:  </label>
+        <input type = "text" name="msg">
+        <input type = "text" name="style">
+        <input type = "submit" value="SUMBIT">
+    </div>
+    <br>
+    {{result}}
+</form>

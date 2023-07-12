@@ -1,0 +1,12 @@
+<form  method = "post" id = "REGEXForm" name="REGEXForm" >
+    {%csrf_token%}
+    <div>
+        <label>write your phone: </label>
+        <input type = "text" name="phone">
+        <label>write your mail: </label>
+        <input type = "text" name="mail">
+        <input type = "submit" value="SUMBIT">
+    </div>
+    <br>
+    {{result}}
+</form>
